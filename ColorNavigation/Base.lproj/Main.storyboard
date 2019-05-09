@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uhe-R2-2rT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="c4f-RS-wOa">
+            <objects>
+                <navigationController id="uhe-R2-2rT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AlA-et-zsA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="95d-Lt-jhQ" kind="relationship" relationship="rootViewController" id="KOk-C6-XCJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwS-8u-Amn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1644" y="134"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="M3u-qW-8r6">
+            <objects>
+                <viewController title="Home" id="95d-Lt-jhQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8PL-wl-uVP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwh-gD-per">
+                                <rect key="frame" x="114" y="296" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.66023186142272161" blue="0.003799603980033095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Yur-Gs-K88" kind="show" id="DTg-v0-VQ6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.046545039429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="sfF-lT-LQb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Red" id="VW8-MK-dCr"/>
+                    <connections>
+                        <segue destination="Yur-Gs-K88" kind="show" id="2YY-JF-Kc1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2h-t5-tbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="134"/>
+        </scene>
+        <!--Orange-->
+        <scene sceneID="Lkp-y0-ebb">
+            <objects>
+                <viewController title="Orange" id="Yur-Gs-K88" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YQr-PX-bg7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xew-gY-CiK">
+                                <rect key="frame" x="114" y="296" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.9160066410889246" blue="0.0019352455799942492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b5b-mX-NAo" kind="show" id="WJ9-No-SLx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.61960784313725492" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="aAD-gA-8OO"/>
+                    </view>
+                    <connections>
+                        <segue destination="b5b-mX-NAo" kind="show" id="yKR-0F-thI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WMx-Zu-HLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="134"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="rxN-ru-mNi">
+            <objects>
+                <viewController title="Yellow" id="b5b-mX-NAo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="luF-mJ-QlW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy1-TU-5X0">
+                                <rect key="frame" x="114" y="296" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.002009753045621232" green="1" blue="0.044006684409709562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0aJ-0k-mrh" kind="show" id="3JY-wb-IJ7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.91600664109999996" blue="0.00193524558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ARe-4N-G8q"/>
+                    </view>
+                    <connections>
+                        <segue destination="0aJ-0k-mrh" kind="show" id="6a5-fi-ppE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUv-bE-bPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="134"/>
+        </scene>
+        <!--Green-->
+        <scene sceneID="HI7-Jw-s0I">
+            <objects>
+                <viewController title="Green" id="0aJ-0k-mrh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1RH-3m-Kee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-Qf-SwG">
+                                <rect key="frame" x="114" y="296" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.60881678139999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ihd-FR-j3Z" kind="show" id="tx5-Hd-Zkt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0020097530459999998" green="1" blue="0.044006684409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rAA-NI-ZRc"/>
+                    </view>
+                    <connections>
+                        <segue destination="ihd-FR-j3Z" kind="show" id="Cgz-UC-bpt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFj-ch-XDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="134"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="iZ0-SH-spk">
+            <objects>
+                <viewController title="Blue" id="ihd-FR-j3Z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vyC-Sf-H6H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m29-Qi-iOy">
+                                <rect key="frame" x="114" y="296" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.24185193753047293" green="0.022121451623398194" blue="0.75876376295336789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0PO-XD-6wC" kind="show" id="Wgd-Sn-Qx2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.60881678139999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ned-px-6Bk"/>
+                    </view>
+                    <connections>
+                        <segue destination="0PO-XD-6wC" kind="show" id="aaa-yN-RIL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0j-gU-TCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="134"/>
+        </scene>
+        <!--Indigo-->
+        <scene sceneID="z70-LB-cqd">
+            <objects>
+                <viewController title="Indigo" id="0PO-XD-6wC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Od-nX-IWG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyV-xA-FJq">
+                                <rect key="frame" x="114" y="296" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.75042151352469588" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EGX-QS-v0o" kind="show" id="dDj-KS-Fb5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2418519375" green="0.02212145162" blue="0.75876376300000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="pUh-bX-PBk"/>
+                    </view>
+                    <connections>
+                        <segue destination="EGX-QS-v0o" kind="show" id="H0E-QD-dqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsU-OG-Tyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3092" y="134"/>
+        </scene>
+        <!--Violet-->
+        <scene sceneID="BzH-Vv-CNB">
+            <objects>
+                <viewController title="Violet" id="EGX-QS-v0o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="caH-rQ-b6e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyc-Aj-3QA">
+                                <rect key="frame" x="114" y="296" width="147" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.046545039429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="95d-Lt-jhQ" kind="show" id="4ui-Sx-GyI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75042151349999997" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7YF-bk-6R3"/>
+                    </view>
+                    <connections>
+                        <segue destination="95d-Lt-jhQ" kind="show" id="qZI-7e-2cZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWy-6W-weC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3924" y="134"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="H0E-QD-dqa"/>
+        <segue reference="aaa-yN-RIL"/>
+        <segue reference="Cgz-UC-bpt"/>
+        <segue reference="6a5-fi-ppE"/>
+        <segue reference="WJ9-No-SLx"/>
+        <segue reference="2YY-JF-Kc1"/>
+        <segue reference="4ui-Sx-GyI"/>
+    </inferredMetricsTieBreakers>
+</document>
